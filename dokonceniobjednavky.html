@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Objednávka dokončena</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="main-container">
+    <header>
+        <h1>Aqua-plants.cz</h1>
+        <a href=kosik.html class="cart active">
+            <span class="cart_price">Košík - 0 Kč</span>
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Zadejte hledaný výraz..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href=index.html>Úvod</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='rostliny.html'">Rostliny
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href=nenarocne.html>Nenáročné rostliny</a>
+                <a href=cervene.html>Červené rostliny</a>
+                <a href=mechy.html>Mechy</a>
+            </div>
+        </div>
+        <a href=kontakty.html>Kontakty</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="navigation">
+        <a href="index.html">Úvod</a>
+        <span> > </span>
+        <a href="kosik.html">Košík</a>
+        <span> > </span>
+        <a href="fakturacniudaje.html">Fakturační údaje</a>
+        <span> > </span>
+        <a href="dodaciudajehtml">Dodací údaje</a>
+        <span> > </span>
+        <span class="category">Objednávka dokončena</span>
+    </div>
+
+    <div class="success">
+        <p class="">Děkujeme, Vaše objednávka byla úspěšně dokončena! Pokyny k platbě naleznete ve Vašem e-mailu</p>
+        <p class="return">Klikněte <a href=index.html>zde</a> pro návrat na domovskou stránku</p>
+    </div>
+
+    <footer>
+        <p>Jedná se o studentský projekt!</p>
+        <p>Vytvořil Marek Šemro</p>
+    </footer>
+
+</div>
+</body>
+</html>

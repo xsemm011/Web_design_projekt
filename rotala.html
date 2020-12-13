@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Rotala rotundifolia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="main-container">
+    <header>
+        <h1>Aqua-plants.cz</h1>
+        <a href=kosik.html class="cart">
+            <span class="cart_price">Košík - 253 Kč</span>
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Zadejte hledaný výraz..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href=index.html>Úvod</a>
+        <div class="dropdown active">
+            <button class="dropbtn" onclick="window.location.href='rostliny.html'">Rostliny
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href=nenarocne.html>Nenáročné rostliny</a>
+                <a href=cervene.html>Červené rostliny</a>
+                <a href=mechy.html>Mechy</a>
+            </div>
+        </div>
+        <a href=kontakty.html>Kontakty</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <div class="navigation">
+        <a href="index.html">Úvod</a>
+        <span> > </span>
+        <a href="rostliny.html">Rostliny</a>
+        <span> > </span>
+        <a href="cervene.html">Červené rostliny</a>
+        <span> > </span>
+        <span class="category">Rotala rotundifolia</span>
+    </div>
+
+    <div class="flex-container">
+        <div style="flex-basis: 500px">
+            <img class="productimg" src="images/rotala.jpg" alt="Rostlina Rotala rotundifolia">
+        </div>
+        <div style="flex-basis: 500px">
+            <h2 class="name">Rotala rotundifolia</h2>
+            <p class="description">Ideální rostlinka do pozadí akvária.</p>
+            <p class="description">
+                Ideální rostlinka do pozadí akvária. Velký rozdíl je mezi jejími listy, které
+                jsou pěstovány nad vodou ve sklenících a pod vodou. Emerzní listy (rostoucí nad vodou)
+                jsou zelené a oválné, kdežto submersní (pod vodou) jsou velmi jemné, dlouhé a
+                oranžové. Košíčkové rostliny jsou vždy v emerezní formě a invitro rostliny
+                jsou díky 100% vlhkosti v kelímku v podstatě submerzní. Čím více světla ji
+                zajistíte, tím budou listy více do červena.
+            </p>
+
+        </div>
+        <div style="flex-basis: 500px" class="doubleflex">
+            <table class="specification_table">
+                <tr>
+                    <th>Obtížnost pěstování</th>
+                    <th>Nároky na osvětlení</th>
+                    <th>Výška dospělé rostliny</th>
+                </tr>
+                <tr>
+                    <td>snadná</td>
+                    <td>nízké</td>
+                    <td>10-30 cm</td>
+                </tr>
+                <tr>
+                    <th>Rychlost růstu</th>
+                    <th>Teplota</th>
+                    <th>Umístění v akváriu</th>
+                </tr>
+                <tr>
+                    <td>střední</td>
+                    <td>23-28°C</td>
+                    <td>střed</td>
+                </tr>
+            </table>
+            <p class="available">Skladem</p>
+            <div class="buy">
+                <div class="price">39 Kč</div>
+                <button class="minus">-</button>
+                <input class="form-control" type="text" name="kusy" value="1" maxlength="4">
+                <button class="plus">+</button>
+                <button class="add_to_cart_button" type="submit">Do košíku</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Jedná se o studentský projekt!</p>
+        <p>Vytvořil Marek Šemro</p>
+    </footer>
+
+</div>
+</body>
+</html>

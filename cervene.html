@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Červené rostliny</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="main-container">
+    <header>
+        <h1>Aqua-plants.cz</h1>
+        <a href=kosik.html class="cart">
+            <span class="cart_price">Košík - 0 Kč</span>
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Zadejte hledaný výraz..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href=index.html>Úvod</a>
+        <div class="dropdown active+">
+            <button class="dropbtn" onclick="window.location.href='rostliny.html'">Rostliny
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href=nenarocne.html>Nenáročné rostliny</a>
+                <a href=cervene.html>Červené rostliny</a>
+                <a href=mechy.html>Mechy</a>
+            </div>
+        </div>
+        <a href=kontakty.html>Kontakty</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <div class="navigation">
+        <a href="index.html">Úvod</a>
+        <span> > </span>
+        <a href="rostliny.html">Rostliny</a>
+        <span> > </span>
+        <span class="category">Červené rostliny</span>
+    </div>
+    <div class="grid">
+        <div>
+            <img src="images/alternanthera.jpg" alt="Rostlina Alternantera reineckii">
+            <h2>Alternantera reineckii</h2>
+            <p>66 Kč</p>
+            <button onclick="document.location='alternanthera.html'">Zobrazit</button>
+        </div>
+        <div>
+            <img src="images/pogostemon.jpg" alt="Rostlina Pogostemon stellata">
+            <h2>Pogostemon stellata</h2>
+            <p>79 Kč</p>
+            <button onclick="document.location='pogostemon.html'">Zobrazit</button>
+        </div>
+        <div>
+            <img src="images/rotala.jpg" alt="Rostlina Rotala rotundifolia">
+            <h2>Rotala rotundifolia</h2>
+            <p>39 Kč</p>
+            <button onclick="document.location='rotala.html'">Zobrazit</button>
+        </div>
+        <div>
+            <img src="images/ludwigiaperu.jpg" alt="Rostlina Ludwigia peruensis">
+            <h2>Ludwigia peruensis</h2>
+            <p>109 Kč</p>
+            <button onclick="document.location='ludwigiaperu.html'">Zobrazit</button>
+        </div>
+        <div>
+            <img src="images/ludwigia.jpg" alt="Rostlina Ludwigia repens">
+            <h2>Ludwigia repens</h2>
+            <p>35 Kč</p>
+            <button onclick="document.location='ludwigia.html'">Zobrazit</button>
+        </div>
+        <div>
+            <img src="images/ammania.jpg" alt="Rostlina Ammania gracilis red">
+            <h2>Ammania gracilis red</h2>
+            <p>79 Kč</p>
+            <button onclick="document.location='ammania.html'">Zobrazit</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Jedná se o studentský projekt!</p>
+        <p>Vytvořil Marek Šemro</p>
+    </footer>
+
+</div>
+</body>
+</html>

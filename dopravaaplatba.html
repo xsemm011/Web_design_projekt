@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Doprava a platba</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="main-container">
+    <header>
+        <h1>Aqua-plants.cz</h1>
+        <a href=kosik.html class="cart active">
+            <span class="cart_price">Košík - 253 Kč</span>
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Zadejte hledaný výraz..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href=index.html>Úvod</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='rostliny.html'">Rostliny
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href=nenarocne.html>Nenáročné rostliny</a>
+                <a href=cervene.html>Červené rostliny</a>
+                <a href=mechy.html>Mechy</a>
+            </div>
+        </div>
+        <a href=kontakty.html>Kontakty</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="navigation">
+        <a href="index.html">Úvod</a>
+        <span> > </span>
+        <a href="kosik.html">Košík</a>
+        <span> > </span>
+        <a href="kontaktniudaje.html">Kontaktní údaje</a>
+        <span> > </span>
+        <span class="category">Doprava a platba</span>
+    </div>
+
+    <div class="flex_container_shipping">
+        <div style="flex-basis: 700px">
+            <div class="shippment">
+                <h2>Vyberte způsob dopravy:</h2>
+                <input type="radio" id="ceskaposta" name="shippment">
+                <label for="ceskaposta"> Česká pošta - Balík do balíkovny</label><br>
+                <input type="radio" id="ceskaposta2" name="shippment">
+                <label for="ceskaposta2"> Česká pošta - Balík na poštu</label><br>
+                <input type="radio" id="ceskaposta3" name="shippment">
+                <label for="ceskaposta3"> Česká pošta - Balík do ruky</label><br>
+                <input type="radio" id="geispoint" name="shippment">
+                <label for="geispoint"> GEIS - Point</label><br>
+                <input type="radio" id="gls" name="shippment">
+                <label for="gls"> GLS - Business parcel</label><br>
+                <input type="radio" id="osobniodber" name="shippment">
+                <label for="osobniodber"> Osobní odběr na prodejně</label><br>
+            </div>
+        </div>
+        <div style="flex-basis: 700px">
+            <div class="payment">
+                <h2>Vyberte způsob platby:</h2>
+                <input type="radio" id="prevod" name="payment">
+                <label for="prevod">Bankovní převod (zdarma)</label><br>
+                <input type="radio" id="kartou" name="payment">
+                <label for="kartou"> Platba kartou online (zdarma)</label><br>
+                <input type="radio" id="hotove" name="payment">
+                <label for="hotove"> Hotově na prodejně (zdarma)</label><br>
+                <input type="radio" id="dobirka" name="payment">
+                <label for="dobirka"> Dobírka (69 Kč)</label><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="finish_buttons">
+        <div class="buttons">
+            <button onclick="document.location='kontaktniudaje.html'" class="back">Zpět ke kontaktním údajům</button>
+            <button onclick="document.location='dokonceniobjednavky.html'" class="checkout">Dokončit objednávku</button>
+        </div>
+    </div>
+    <footer>
+        <p>Jedná se o studentský projekt!</p>
+        <p>Vytvořil Marek Šemro</p>
+    </footer>
+
+</div>
+</body>
+</html>
